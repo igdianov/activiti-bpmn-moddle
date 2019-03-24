@@ -1,0 +1,6 @@
+<activiti:in xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+            sourceExpression="fooExp"
+            source="foo"
+            target="bar"
+            variables="all"
+            local="true" />

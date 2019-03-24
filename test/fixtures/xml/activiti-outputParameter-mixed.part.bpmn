@@ -1,0 +1,10 @@
+<activiti:outputParameter xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+                         name="var1">
+  <activiti:list>
+    <activiti:value>constantStringValue</activiti:value>
+    <activiti:value>${ 'elValue' }</activiti:value>
+    <activiti:script scriptFormat="Groovy">
+      return "scriptValue";
+    </activiti:script>
+  </activiti:list>
+</activiti:outputParameter>

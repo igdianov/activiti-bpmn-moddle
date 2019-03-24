@@ -1,0 +1,6 @@
+<activiti:executionListener xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+                           event="start">
+  <activiti:script scriptFormat="groovy">
+    foo = bar;
+  </activiti:script>
+</activiti:executionListener>

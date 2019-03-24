@@ -1,0 +1,5 @@
+<activiti:taskListener xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+  event='create'
+  class='org.activiti.bpm.engine.test.bpmn.usertask.UserTaskTestCreateTaskListener'
+  delegateExpression="${myTaskListener}"
+  expression="${myTaskListener.notify(task, task.eventName)}" />

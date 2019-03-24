@@ -1,0 +1,18 @@
+<activiti:formData xmlns:activiti="http://activiti.org/schema/1.0/bpmn">
+  <activiti:formField
+      id="stringField"
+      label="String Field"
+      type="string"
+      defaultValue="someString">
+    <activiti:properties>
+      <activiti:property id="p1" value="property1"/>
+      <activiti:property id="p2" value="property2"/>
+    </activiti:properties>
+    <activiti:validation>
+      <activiti:constraint name="readonly" />
+      <activiti:constraint name="minlength" config="5" />
+    </activiti:validation>
+    <activiti:value id="a" name="A"/>
+    <activiti:value id="b" name="B"/>
+  </activiti:formField>
+</activiti:formData>

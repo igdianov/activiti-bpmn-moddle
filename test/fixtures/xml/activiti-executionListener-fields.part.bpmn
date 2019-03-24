@@ -1,0 +1,6 @@
+<activiti:executionListener xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+  event="start"
+  class="my.company.Listener" >
+  <activiti:field name="fieldOne" stringValue="myString" />
+  <activiti:field name="fieldTwo" expression="${myExpression}" />
+</activiti:executionListener>

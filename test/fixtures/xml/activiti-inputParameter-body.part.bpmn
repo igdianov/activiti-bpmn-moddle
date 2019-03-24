@@ -1,0 +1,4 @@
+<activiti:inputParameter xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+                        name="foo">
+  BAR
+</activiti:inputParameter>

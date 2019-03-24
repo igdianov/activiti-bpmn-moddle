@@ -1,0 +1,6 @@
+<businessRuleTask xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+             decisionRef="myDecision"
+             activiti:decisionRefBinding="version"
+             activiti:decisionRefVersion="1"
+             activiti:decisionRefTenantId="tenant1"/>

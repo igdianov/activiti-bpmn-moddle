@@ -1,0 +1,49 @@
+{
+  "name": "activiti-bpmn-moddle",
+  "version": "3.2.0",
+  "description": "Activiti moddle extensions for BPMN 2.0",
+  "scripts": {
+    "all": "run-s lint test",
+    "lint": "eslint .",
+    "dev": "npm test -- --watch",
+    "test": "mocha -r esm -r ./test/expect --reporter=spec --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igdianov/activiti-bpmn-moddle"
+  },
+  "keywords": [
+    "bpmn",
+    "moddle",
+    "bpmn20",
+    "activiti",
+    "meta-model"
+  ],
+  "author": {
+    "name": "Igor Dianov",
+    "url": "https://github.com/igdianov"
+  },
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "async": "^2.6.0",
+    "bpmn-moddle": "^5.1.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-plugin-bpmn-io": "^0.5.2",
+    "esm": "^3.0.15",
+    "glob": "^7.1.2",
+    "jsondiffpatch": "^0.2.5",
+    "mocha": "^4.0.1",
+    "npm-run-all": "^4.1.2",
+    "xsd-schema-validator": "^0.5.0"
+  },
+  "dependencies": {
+    "min-dash": "^3.0.0"
+  }
+}

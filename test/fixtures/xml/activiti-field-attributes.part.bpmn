@@ -1,0 +1,5 @@
+<activiti:field xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+  name="html"
+  expression="&lt;html&gt;&lt;body&gt;Hi!&lt;/body&gt;&lt;/html&gt;"
+  stringValue="41 is not the answer!"
+/>

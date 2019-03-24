@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/schema/1.0/bpmn" targetNamespace="test">
+  <process id="FormDataTest.testFormFieldSubmit">
+    <startEvent id="start" />
+    <sequenceFlow sourceRef="start" targetRef="usertask" />
+    <userTask id="usertask" name="Task" activiti:candidateGroups="dummy">
+      <extensionElements>
+        <activiti:formData>
+          <activiti:formField id="stringField" label="String Field" type="string" defaultValue="someString">
+            <activiti:validation>
+              <activiti:constraint name="maxlength" config="10" />
+              <activiti:constraint name="minlength" config="5" />
+            </activiti:validation>
+          </activiti:formField>
+          <activiti:formField
+              id="enumField" label="Enum Field" type="enum"
+              defaultValue="a">
+              <activiti:value id="a" name="A"/>
+              <activiti:value id="b" name="B"/>
+              <activiti:value id="c" name="C"/>
+          </activiti:formField>
+          <activiti:formField id="longField" label="Long Field" type="long" defaultValue="5">
+            <activiti:properties>
+              <activiti:property id="p1" name="foo" value="property1"/>
+              <activiti:property id="p2" name="bar" value="property2"/>
+            </activiti:properties>
+            <activiti:validation>
+              <activiti:constraint name="max" config="10" />
+              <activiti:constraint name="min" config="3" />
+            </activiti:validation>
+          </activiti:formField>
+          <activiti:formField id="customField" label="Custom Field" type="string">
+            <activiti:validation>
+              <activiti:constraint name="validator" config="org.activiti.bpm.engine.test.api.form.CustomValidator" />
+            </activiti:validation>
+          </activiti:formField>
+        </activiti:formData>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow sourceRef="usertask" targetRef="task2" />
+    <userTask id="task2" />
+  </process>
+</definitions>
