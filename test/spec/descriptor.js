@@ -11,7 +11,7 @@ describe('descriptor', function() {
     // then
     expect(activitiDescriptor).to.exist;
 
-    expect(activitiDescriptor.uri).to.eql('http://activiti.org/schema/1.0/bpmn');
+    expect(activitiDescriptor.uri).to.eql('http://activiti.org/bpmn');
     expect(activitiDescriptor.prefix).to.eql('activiti');
   });
 

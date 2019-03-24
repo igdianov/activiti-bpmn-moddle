@@ -35,7 +35,7 @@ describe('write', function() {
       });
 
       var expectedXML =
-        '<activiti:field xmlns:activiti="http://activiti.org/schema/1.0/bpmn" ' +
+        '<activiti:field xmlns:activiti="http://activiti.org/bpmn" ' +
               'name="Field_1" stringValue="myFieldValue" />';
 
       // when
@@ -58,7 +58,7 @@ describe('write', function() {
       });
 
       var expectedXML =
-        '<activiti:field xmlns:activiti="http://activiti.org/schema/1.0/bpmn" name="Field_1">' +
+        '<activiti:field xmlns:activiti="http://activiti.org/bpmn" name="Field_1">' +
           '<activiti:string>myStringValue</activiti:string>' +
         '</activiti:field>';
 
@@ -82,7 +82,7 @@ describe('write', function() {
       });
 
       var expectedXML =
-        '<activiti:field xmlns:activiti="http://activiti.org/schema/1.0/bpmn" name="Field_1">' +
+        '<activiti:field xmlns:activiti="http://activiti.org/bpmn" name="Field_1">' +
           '<activiti:expression>${myExpressionValue}</activiti:expression>' +
         '</activiti:field>';
 

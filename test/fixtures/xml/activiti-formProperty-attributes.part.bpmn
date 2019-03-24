@@ -1,4 +1,4 @@
-<activiti:formProperty xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+<activiti:formProperty xmlns:activiti="http://activiti.org/bpmn"
   id="longProperty"
   name="Property"
   type="long"

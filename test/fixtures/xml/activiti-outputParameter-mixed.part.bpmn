@@ -1,4 +1,4 @@
-<activiti:outputParameter xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+<activiti:outputParameter xmlns:activiti="http://activiti.org/bpmn"
                          name="var1">
   <activiti:list>
     <activiti:value>constantStringValue</activiti:value>

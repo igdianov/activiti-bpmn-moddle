@@ -1,4 +1,4 @@
-<activiti:script xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+<activiti:script xmlns:activiti="http://activiti.org/bpmn"
                 scriptFormat="groovy" resource="null">
   foo = bar;
 </activiti:script>

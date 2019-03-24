@@ -1,4 +1,4 @@
-<activiti:executionListener xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+<activiti:executionListener xmlns:activiti="http://activiti.org/bpmn"
   event="start"
   class="my.company.Listener" >
   <activiti:field name="fieldOne" stringValue="myString" />

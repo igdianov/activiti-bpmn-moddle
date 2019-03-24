@@ -1,5 +1,5 @@
 <process xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
-         xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+         xmlns:activiti="http://activiti.org/bpmn"
          activiti:candidateStarterUsers="userInGroup2"
          activiti:candidateStarterGroups="group1, group2, group3"
          activiti:versionTag="1.0.0" >

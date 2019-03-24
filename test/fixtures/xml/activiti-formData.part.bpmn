@@ -1,4 +1,4 @@
-<activiti:formData xmlns:activiti="http://activiti.org/schema/1.0/bpmn">
+<activiti:formData xmlns:activiti="http://activiti.org/bpmn">
   <activiti:formField
       id="stringField"
       label="String Field"

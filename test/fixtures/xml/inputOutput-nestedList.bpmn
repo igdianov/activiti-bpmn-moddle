@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn2:definitions
     xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL"
-    xmlns:activiti="http://activiti.org/schema/1.0/bpmn"
+    xmlns:activiti="http://activiti.org/bpmn"
     xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
     xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
     xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     id="_FVEpwO_VEeOtYvXzz5ksgw"
-    targetNamespace="http://activiti.org/schema/1.0/bpmn"
+    targetNamespace="http://activiti.org/bpmn"
     exporter="activiti modeler"
     exporterVersion="2.5.0"
     xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">

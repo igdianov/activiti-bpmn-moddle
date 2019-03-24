@@ -1,4 +1,4 @@
-<activiti:formProperty xmlns:activiti="http://activiti.org/schema/1.0/bpmn">
+<activiti:formProperty xmlns:activiti="http://activiti.org/bpmn">
   <activiti:value id="false" name="Yes"/>
   <activiti:value id="true" name="No"/>
 </activiti:formProperty>
