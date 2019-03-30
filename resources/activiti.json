@@ -131,6 +131,12 @@
           "isAttr": true,
           "type": "Boolean",
           "default": false
+        },
+        {
+          "name": "scope",
+          "isAttr": true,
+          "type": "String",
+          "default": "global"
         }
       ]
     },

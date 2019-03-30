@@ -142,6 +142,29 @@ describe('read', function() {
 
     });
 
+    describe('activiti:scope', function() {
+
+      it('on SignalEventDefinition', function(done) {
+
+        // given
+        var xml = readFile('test/fixtures/xml/signalEventDefinition-activiti-scope.part.bpmn');
+
+        // when
+        moddle.fromXML(xml, 'bpmn:SignalEventDefinition', function(err, definition) {
+
+          // then
+          expect(definition).to.jsonEqual({
+            $type: 'bpmn:SignalEventDefinition',
+            scope: 'global'
+          });
+
+          done(err);
+        });
+
+      });
+
+    });
+
 
     describe('activiti:errorCodeVariable', function() {
 
