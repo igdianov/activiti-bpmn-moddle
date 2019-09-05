@@ -1,6 +1,6 @@
 {
   "name": "activiti-bpmn-moddle",
-  "version": "3.2.0",
+  "version": "1.0.3",
   "description": "Activiti moddle extensions for BPMN 2.0",
   "scripts": {
     "all": "run-s lint test",
