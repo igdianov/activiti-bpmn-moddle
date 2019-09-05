@@ -165,6 +165,28 @@ describe('read', function() {
 
     });
 
+    describe('activiti:correlationKey', function() {
+
+      it('on MessageEventDefinition', function(done) {
+
+        // given
+        var xml = readFile('test/fixtures/xml/messageEventDefinition-activiti-correlationKey.part.bpmn');
+
+        // when
+        moddle.fromXML(xml, 'bpmn:MessageEventDefinition', function(err, definition) {
+
+          // then
+          expect(definition).to.jsonEqual({
+            $type: 'bpmn:MessageEventDefinition',
+            correlationKey: '${correlationId}'
+          });
+
+          done(err);
+        });
+
+      });
+
+    });
 
     describe('activiti:errorCodeVariable', function() {
 

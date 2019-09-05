@@ -141,6 +141,20 @@
       ]
     },
     {
+      "name": "MessageEventDefinition",
+      "isAbstract": true,
+      "extends": [
+        "bpmn:MessageEventDefinition"
+      ],
+      "properties": [
+        {
+          "name": "correlationKey",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
       "name": "ErrorEventDefinition",
       "isAbstract": true,
       "extends": [
