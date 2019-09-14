@@ -120,18 +120,12 @@
       ]
     },
     {
-      "name": "SignalEventDefinition",
+      "name": "Signal",
       "isAbstract": true,
       "extends": [
-        "bpmn:SignalEventDefinition"
+        "bpmn:Signal"
       ],
       "properties": [
-        {
-          "name": "async",
-          "isAttr": true,
-          "type": "Boolean",
-          "default": false
-        },
         {
           "name": "scope",
           "isAttr": true,
@@ -149,6 +143,11 @@
       "properties": [
         {
           "name": "correlationKey",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "messageExpression",
           "isAttr": true,
           "type": "String"
         }

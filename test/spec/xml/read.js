@@ -120,41 +120,21 @@ describe('read', function() {
 
       });
 
-
-      it('on SignalEventDefinition', function(done) {
-
-        // given
-        var xml = readFile('test/fixtures/xml/signalEventDefinition-activiti-async.part.bpmn');
-
-        // when
-        moddle.fromXML(xml, 'bpmn:SignalEventDefinition', function(err, definition) {
-
-          // then
-          expect(definition).to.jsonEqual({
-            $type: 'bpmn:SignalEventDefinition',
-            async: true
-          });
-
-          done(err);
-        });
-
-      });
-
     });
 
     describe('activiti:scope', function() {
 
-      it('on SignalEventDefinition', function(done) {
+      it('on Signal', function(done) {
 
         // given
-        var xml = readFile('test/fixtures/xml/signalEventDefinition-activiti-scope.part.bpmn');
+        var xml = readFile('test/fixtures/xml/signal-activiti-scope.part.bpmn');
 
         // when
-        moddle.fromXML(xml, 'bpmn:SignalEventDefinition', function(err, definition) {
+        moddle.fromXML(xml, 'bpmn:Signal', function(err, definition) {
 
           // then
           expect(definition).to.jsonEqual({
-            $type: 'bpmn:SignalEventDefinition',
+            $type: 'bpmn:Signal',
             scope: 'global'
           });
 
@@ -179,6 +159,29 @@ describe('read', function() {
           expect(definition).to.jsonEqual({
             $type: 'bpmn:MessageEventDefinition',
             correlationKey: '${correlationId}'
+          });
+
+          done(err);
+        });
+
+      });
+
+    });
+
+    describe('activiti:messageExpression', function() {
+
+      it('on MessageEventDefinition', function(done) {
+
+        // given
+        var xml = readFile('test/fixtures/xml/messageEventDefinition-activiti-messageExpression.part.bpmn');
+
+        // when
+        moddle.fromXML(xml, 'bpmn:MessageEventDefinition', function(err, definition) {
+
+          // then
+          expect(definition).to.jsonEqual({
+            $type: 'bpmn:MessageEventDefinition',
+            messageExpression: 'message-${name}'
           });
 
           done(err);
