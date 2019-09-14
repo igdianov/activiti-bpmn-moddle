@@ -1,6 +1,6 @@
 # activiti-bpmn-moddle
 
-[![Build Status](https://travis-ci.org/activiti/activiti-bpmn-moddle.svg)](https://travis-ci.org/igdianov/activiti-bpmn-moddle)
+[![Build Status](https://travis-ci.org/igdianov/activiti-bpmn-moddle.svg?branch=master)](https://travis-ci.org/igdianov/activiti-bpmn-moddle)
 
 This project defines the [Activiti](https://activiti.org) namespace extensions for BPMN 2.0 as a [moddle](https://github.com/bpmn-io/moddle) descriptor.
 
